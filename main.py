@@ -20,14 +20,6 @@ import load
 r = sr.Recognizer()
 #r.energy_threshold=5000
 
-# flips a coin
-def flip():
-    tof = bool(random.getrandbits(1))
-    if tof == True:
-        return 'heads'
-    else:
-        return 'tails'
-
 # not in use at moment
 def substring_after(s, delim):
     return s.partition(delim)[2]
@@ -58,9 +50,6 @@ def handle(text):
     if ("who's cool" in text) or ('who is cool' in text):
         say.speak('dad, of course')
 
-    if 'heads or tails' in text:
-        say.speak(flip())
-
     # Handles modding
     fin = load.outsourcer(text)
     if fin != None:
@@ -72,7 +61,7 @@ def mainfunction(source):
 
     print('listening')
 
-    return "what's the time" # uncomment ths if working offline
+    #return "what's the time" # uncomment ths if working offline
 
     audio = r.listen(source)
 

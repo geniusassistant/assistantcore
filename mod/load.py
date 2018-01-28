@@ -1,6 +1,6 @@
 import importlib
 
-enabledmods = [examplemod']
+enabledmods = ['examplemod', 'base']
 print('init mods')
 
 def outsourcer(text):
