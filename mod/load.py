@@ -3,7 +3,9 @@ import importlib
 # TODO: add more API features and support
 
 # TODO: move this array into a config file
-enabledmods = ['examplemod', 'base']
+with open('config.txt') as f:
+    enabledmods = f.readlines()
+#enabledmods = ['examplemod', 'base']
 print('init mods')
 
 def outsourcer(text):
