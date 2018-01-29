@@ -1,5 +1,8 @@
 import importlib
 
+# TODO: add more API features and support
+
+# TODO: move this array into a config file
 enabledmods = ['examplemod', 'base']
 print('init mods')
 

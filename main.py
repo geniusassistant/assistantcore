@@ -3,6 +3,9 @@ import pygame
 import random
 import time
 
+# TODO: add logging for history of speaking
+# TODO: add a confg file
+
 # Slightly hacky, what does this even do?
 import sys
 
@@ -38,10 +41,6 @@ def handle(text):
 
     # List of example queries
     # TODO: Move example queries to an external mod file
-    if ("what's the time" in text) or ('give me the time' in text):
-        timestr = time.strftime("%I o'clock and %M minutes")[1:]
-        print(timestr)
-        say.speak(timestr)
 
     if "what's trending" in text:
         print('NEWS')
