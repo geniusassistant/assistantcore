@@ -1,6 +1,7 @@
 import time
 import random
 import news
+import gitmessage
 
 # flips a coin
 def flip():
@@ -12,6 +13,9 @@ def flip():
 
 #main func for api
 def outsource(text):
+    if "what's my latest commit" in text:
+        return 'in your last commit message, you said ' + gitmessage.all()
+
     if 'heads or tails' in text:
         return flip()
 
