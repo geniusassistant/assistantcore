@@ -4,7 +4,6 @@ import random
 import time
 
 # TODO: add logging for history of speaking
-# TODO: add a confg file
 
 # Slightly hacky, what does this even do?
 import sys
@@ -37,17 +36,7 @@ def play(path):
 def handle(text):
     if text == None:
         return
-    #t = substring_after(text, 'Google')
-
-    # List of example queries
-    # TODO: Move example queries to an external mod file
-
-    if "what's trending" in text:
-        print('NEWS')
-        say.speak(news.headline())
-
-    if ("who's cool" in text) or ('who is cool' in text):
-        say.speak('dad, of course')
+    #text = substring_after(text, 'Google')
 
     # Handles modding
     fin = load.outsourcer(text)
@@ -58,9 +47,9 @@ def handle(text):
 def mainfunction(source):
     global r
 
-    print('listening')
+    print('getting audio')
 
-    #return "what's the time" # uncomment ths if working offline
+    return "what's trending" # uncomment ths if working offline
 
     audio = r.listen(source)
 
