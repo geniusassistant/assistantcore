@@ -2,6 +2,7 @@ import time
 import random
 import news
 import gitmessage
+import json
 
 # flips a coin
 def flip():

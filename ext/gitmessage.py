@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import re
 import urllib.request
 import random
+import json
 
 username = json.load(open('config.json'))["githubusername"]
 
