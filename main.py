@@ -48,7 +48,7 @@ def mainfunction(source):
 
     print('getting audio')
 
-    #return "what's trending" # uncomment ths if working offline
+    return "" # uncomment ths if working offline
 
     audio = r.listen(source)
 

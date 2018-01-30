@@ -1,4 +1,4 @@
 {
-    "enabledmods": ["base"],
+    "enabledmods": ["base", "sin"],
     "githubusername": "hexx112"
 }
