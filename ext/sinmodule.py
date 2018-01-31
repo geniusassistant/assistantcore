@@ -9,13 +9,15 @@ def cleanhtml(raw_html):
   return cleantext
 
 def getficfromurl(url):
+    print(url)
+
     stories = []
 
     sock = urllib.request.urlopen(url).read().decode("utf-8")
     soup = BeautifulSoup(sock, "lxml")
-    span = str(soup.findAll("div", { "id" : "chapters" })[0])
+    span = str(soup.findAll("div", { "id" : "chapters" }))
     span = cleanhtml(span).strip()
-    print(span)
+    return span
 
 def getfic(tag):
     url = 'https://archiveofourown.org/works/search?utf8=%E2%9C%93&work_search%5Bquery%5D=' + tag
@@ -37,4 +39,4 @@ def getfic(tag):
     return stories
 
 def all(tag):
-    getficfromurl(getfic(tag)[0])
+    return getficfromurl(getfic(tag)[0])

@@ -31,6 +31,10 @@ def play(path):
     pygame.mixer.music.load(path)
     pygame.mixer.music.play()
 
+def log(input, response):
+    with open('log.txt', 'a+') as f:
+        f.write(input + ' : ' + response + '\n')
+
 #handles recognised text
 def handle(text):
     if text == None:
@@ -40,6 +44,7 @@ def handle(text):
     # Handles modding
     fin = load.outsourcer(text)
     if fin != None:
+        log(text, fin)
         say.speak(fin)
 
 # tres to recognise audio
@@ -48,7 +53,7 @@ def mainfunction(source):
 
     print('getting audio')
 
-    return "" # uncomment ths if working offline
+    return "sin me up dad" # uncomment ths if working offline
 
     audio = r.listen(source)
 
