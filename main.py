@@ -53,7 +53,7 @@ def mainfunction(source):
 
     print('getting audio')
 
-    return "sin me up dad" # uncomment ths if working offline
+    #return "get me the weather" # uncomment ths if working offline
 
     audio = r.listen(source)
 
