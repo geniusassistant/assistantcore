@@ -1,5 +1,5 @@
 import sinmodule
 
 def outsource(text):
-    if text == 'sin me up dad':
+    if text == 'send me up Dad':
         return sinmodule.all('drarry')

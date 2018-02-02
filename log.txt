@@ -5,3 +5,9 @@ get me the weather : it is 4 degrees outside and there is
 get me the weather : it is 4 degrees outside and there is light rain
 how much is Bitcoin : bitcoin's price is 7030.057873
 how much is Bitcoin : bitcoin's price is 7019 pounds
+what's the time : 6 o'clock and 22 minutes
+heads or tails : tails
+get me the weather : it is 4.48 degrees outside and there is shower rain
+send me up Dad : []
+heads or tails : tails
+heads or tails : heads

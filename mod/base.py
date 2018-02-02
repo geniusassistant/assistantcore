@@ -1,7 +1,7 @@
 import time
 import random
-#import news
-#import gitmessage
+import news
+import gitmessage
 import json
 
 def weather():

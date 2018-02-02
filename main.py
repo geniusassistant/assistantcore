@@ -10,9 +10,11 @@ import sys
 
 sys.path.insert(0, 'ext')
 sys.path.insert(0, 'mod')
+sys.path.insert(0, 'cron')
 
 # import hand made modules
 import say
+import scheduler
 
 #import modloader for custom modifications
 import load
@@ -78,3 +80,4 @@ while 1:
     t = prompt()
     print(t)
     handle(t)
+    print('---')
