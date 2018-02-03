@@ -23,7 +23,6 @@ def latestrepo(uname):
     return 'https://github.com/'+uname+'/'+stories[0].strip()
 
 def latestmessage(url):
-    url = 'https://github.com/hexx112/homeassistant/'
 
     stories = []
 

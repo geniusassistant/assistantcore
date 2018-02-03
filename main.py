@@ -54,7 +54,7 @@ def mainfunction(source):
 
     print('getting audio')
 
-    return "add to my schedule remember your glasses tommorrow at 16:24" # uncomment ths if working offline
+    # return "add to my schedule remember your glasses tommorrow at 16:24" # uncomment ths if working offline
 
     audio = r.listen(source)
 
