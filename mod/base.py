@@ -3,6 +3,8 @@ import random
 import news
 import gitmessage
 import json
+import scheduler
+import say
 
 def weather():
     import urllib.request
@@ -48,5 +50,10 @@ def outsource(text):
 
     if 'how much is Bitcoin' in text:
         return bitcoin()
+
+    if 'add to my schedule' in text:
+        textparse = text.replace('add to my schedule', '')
+        scheduler.add("12:47", textparse)
+        return 'added to your schedule'
 
 #weather()

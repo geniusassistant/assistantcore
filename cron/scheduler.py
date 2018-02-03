@@ -28,5 +28,4 @@ def split():
     t = Timer(1.0, split)  # every 5 seconds
     t.start()
 
-add(10, 'Remember your glasses tomorrow')
 split()
