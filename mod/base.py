@@ -3,7 +3,6 @@ import random
 import news
 import gitmessage
 import json
-import scheduler
 import say
 
 def substring_after(s, delim):
@@ -54,10 +53,5 @@ def outsource(text):
     if 'how much is Bitcoin' in text:
         return bitcoin()
 
-    if 'add to my schedule' in text:
-        message = text.replace('add to my schedule', '').replace(substring_after(text, 'at'), '').replace('at', '')
-
-        scheduler.add(substring_after(text, 'at'), message)
-        return 'added ' + message + 'to your schedule'
 
 #weather()

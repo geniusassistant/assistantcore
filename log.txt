@@ -19,3 +19,6 @@ add to my schedule hello how are you : added to your schedule
 add to my schedule how are you at 12:45 : added  how are you at 12:45to your schedule
 add to my schedule how are you at 12:45 : added  how are you atto your schedule
 add to my schedule hello how are you at 12:55 : added  hello how are you to your schedule
+add to my schedule remember your glasses tommorrow at 16:24 : added  remember your glasses tommorrow to your schedule
+add to my schedule remember your glasses tommorrow at 16:24 : added  remember your glasses tommorrow to your schedule
+add to my schedule remember your glasses tommorrow at 16:24 : added  remember your glasses tommorrow to your schedule

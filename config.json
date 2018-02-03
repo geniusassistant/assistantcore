@@ -1,4 +1,4 @@
 {
-    "enabledmods": ["base"],
+    "enabledmods": ["base", "scheduler"],
     "githubusername": "hexx112"
 }
