@@ -11,3 +11,11 @@ get me the weather : it is 4.48 degrees outside and there is shower rain
 send me up Dad : []
 heads or tails : tails
 heads or tails : heads
+heads or tails : heads
+heads or tails : tails
+add to my schedule : added to your schedule
+add to my schedule : added to your schedule
+add to my schedule hello how are you : added to your schedule
+add to my schedule how are you at 12:45 : added  how are you at 12:45to your schedule
+add to my schedule how are you at 12:45 : added  how are you atto your schedule
+add to my schedule hello how are you at 12:55 : added  hello how are you to your schedule

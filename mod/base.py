@@ -6,6 +6,9 @@ import json
 import scheduler
 import say
 
+def substring_after(s, delim):
+    return s.partition(delim)[2]
+
 def weather():
     import urllib.request
     w = json.loads(urllib.request.urlopen("https://api.openweathermap.org/data/2.5/weather?id=2653656&units=metric&appid=e5b292ae2f9dae5f29e11499c2d82ece").read())
@@ -52,8 +55,9 @@ def outsource(text):
         return bitcoin()
 
     if 'add to my schedule' in text:
-        textparse = text.replace('add to my schedule', '')
-        scheduler.add("12:47", textparse)
-        return 'added to your schedule'
+        message = text.replace('add to my schedule', '').replace(substring_after(text, 'at'), '').replace('at', '')
+
+        scheduler.add(substring_after(text, 'at'), message)
+        return 'added ' + message + 'to your schedule'
 
 #weather()
