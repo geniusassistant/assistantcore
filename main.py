@@ -10,7 +10,6 @@ import sys
 
 sys.path.insert(0, 'ext')
 sys.path.insert(0, 'mod')
-sys.path.insert(0, 'cron')
 
 # import hand made modules
 import say
