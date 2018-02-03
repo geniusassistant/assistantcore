@@ -1,5 +1,5 @@
 {
-    "enabledmods": ["base", "scheduler"],
-    "enabledpacks": ["extend"],
+    "enabledmods": [],
+    "enabledpacks": ["core"],
     "githubusername": "hexx112"
 }

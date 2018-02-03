@@ -13,7 +13,6 @@ sys.path.insert(0, 'mod')
 
 # import hand made modules
 import say
-import scheduler
 
 #import modloader for custom modifications
 import load

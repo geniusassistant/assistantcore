@@ -7,21 +7,26 @@ import sys
 
 enabledmods = json.load(open('config.json'))["enabledmods"]
 
+print('loaded tree:')
 for folder in os.listdir('mod'):
+    if folder == '__pycache__':
+        break
     if '.' not in folder:
         if folder in json.load(open('config.json'))["enabledpacks"]:
             sys.path.insert(0, 'mod/' + folder)
+            print('    -' + folder)
             for mod in os.listdir('mod/' +  folder):
+                if mod == '__pycache__':
+                    break
+                print('        -' + mod)
                 enabledmods.append(mod.replace('.py', ''))
+    else:
+        if folder != 'load.py':
+            print('    -' + folder)
 
 
-print('Loaded mods:')
-for i in enabledmods:
-    print('    -' + i)
 
 print('-------------------')
-
-os.system('pause')
 
 def outsourcer(text):
     for module in enabledmods:
