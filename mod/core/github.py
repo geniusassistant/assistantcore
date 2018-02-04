@@ -39,3 +39,7 @@ def latestmessage(url):
 
 def all():
     return latestmessage(latestrepo(username))
+
+def outsource(text):
+    if "what's my latest commit" in text:
+        return 'in your last commit message, you said ' + all()

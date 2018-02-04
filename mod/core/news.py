@@ -3,7 +3,6 @@ import re
 import urllib.request
 import random
 
-
 def headline():
     url = 'https://www.bbc.co.uk'
 
@@ -19,3 +18,8 @@ def headline():
             stories.append(stripitem)
 
     return random.choice(stories)
+
+
+def outsource(text):
+    if "what's trending" in text:
+        return headline()

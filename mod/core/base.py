@@ -30,9 +30,6 @@ def flip():
 
 #main func for api
 def outsource(text):
-    if "what's my latest commit" in text:
-        return 'in your last commit message, you said ' + gitmessage.all()
-
     if 'heads or tails' in text:
         return flip()
 
@@ -40,9 +37,6 @@ def outsource(text):
         timestr = time.strftime("%I o'clock and %M minutes")[1:]
         print(timestr)
         return timestr
-
-    if "what's trending" in text:
-        return news.headline()
 
     if ("who's cool" in text) or ('who is cool' in text):
         return 'dad, of course'
