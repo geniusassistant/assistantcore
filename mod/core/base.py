@@ -1,7 +1,6 @@
 import time
 import random
 import news
-import gitmessage
 import json
 import say
 

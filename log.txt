@@ -29,3 +29,11 @@ add to my schedule hello at 16:19 : added  hello to your schedule
 get me the weather : it is 2.41 degrees outside and there is overcast clouds
 what's trending : BBC starts epic Civilisations festival... and you're invited
 what's trending : New Holocaust law 'threatens whitewash' of Polish history
+what's my latest commit : in your last commit message, you said added multiple subjects
+who is the president president of America : Donald Trump
+who is the president of India : Ram Nath Kovind
+who is the president of Ireland : Michael D. Higgins
+who owns Google : Alphabet Inc.
+translate hello into Italian :  hello into
+translate hello how are you in Italian :  hello how are you in Italian
+translate hello how are you into Italian : translating  hello how are you  into  Italian

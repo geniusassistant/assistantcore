@@ -53,7 +53,7 @@ def mainfunction(source):
 
     print('getting audio')
 
-    return "what's my latest commit" # uncomment ths if working offline
+    #return "what's my latest commit" # uncomment ths if working offline
 
     audio = r.listen(source)
 
